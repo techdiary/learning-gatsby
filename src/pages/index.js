@@ -1,13 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import styled from "styled-components"
-
-const Description = styled.div`
-  flex: 1;
-  margin-left: 18px;
-  padding: 12px;
-`
+import indexStyles from "./index.module.css"
 
 const IndexPage = () => {
   return (
@@ -15,9 +9,9 @@ const IndexPage = () => {
       <Layout>
         <h2>Index Page</h2>
         <h4>I'm aayush, living in pink jaipur</h4>
-        <Description>
+        <div className={indexStyles.description}>
           Need a developer? <Link to="/contact">Contact Me.</Link>
-        </Description>
+        </div>
         <p>
           Check out my <Link to="/blog">Blogs.</Link>
         </p>
